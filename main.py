@@ -70,3 +70,6 @@ async def get_answer(questions: str, pdf_file: UploadFile = File(...)):
         answers[question] = answer
 
     return json.dumps(answers)
+
+
+# ["What is the name of the company?", "Who is the CEO of the company?", "What is their vacation policy?", "What is the termination policy?"]
