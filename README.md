@@ -122,7 +122,7 @@ curl -X 'POST' \
    - Further analysis of query-specific patterns could enhance the query augmentation step, producing more precise alternative queries for each user query.
 
 3. **Expanded Document Filtering**:
-   - Instead of limiting to the top 15 documents, using summarization as an additional filtering mechanism can increase response accuracy, helping the LLM to generate higher-quality answers.
+   - Instead of limiting to the top 8 documents, using summarization as an additional filtering mechanism can increase response accuracy, helping the LLM to generate higher-quality answers.
 
 4. **Semantic Routing for Optimized Document Selection**:
    - Pre-processing documents to classify them based on themes (e.g., setup, troubleshooting, A2P campaigns) and classifying user queries dynamically can act as an additional filter in the RAG pipeline, narrowing down documents to contextually relevant ones.
