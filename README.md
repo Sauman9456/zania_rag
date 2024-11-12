@@ -42,7 +42,7 @@ The final stage provides an API endpoint using FastAPI.
 
 - **Script**: `main.py`
 - **Functionality**:
-  - Takes a List of queries from the user and returns an answer in JSON format
+  - Takes a List of queries from the user and returns answer in JSON format
 
 ### Example API Response
 The RAG system responds in the following format:
