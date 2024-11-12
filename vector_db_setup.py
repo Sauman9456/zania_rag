@@ -7,6 +7,15 @@ import os
 
 
 def langchain_doc(doc_dict):
+    """
+    Processes a dictionary of document sections, organizing content by headers, page numbers, and metadata.
+
+    Args:
+        doc_dict (list): List of dictionaries, each representing a document section with titles in hierarchy levels.
+
+    Returns:
+        tuple: A list of langchain Document objects with organized content and metadata, and a list of unique headers processed.
+    """
     docs = []
     process_header = []
     page_number = 1
@@ -55,6 +64,18 @@ def langchain_doc(doc_dict):
 
 
 def create_vectorstore(data, embedding_model):
+    """
+    Creates a vector store from document data using a specified embedding model,
+    useful for efficient similarity search and retrieval.
+
+    Args:
+        data (list): List of dictionaries representing document sections.
+        embedding_model: Model used to generate embeddings for each document.
+
+    Returns:
+        tuple: The vector store object, list of Document objects, and a list of processed headers.
+    """
+
     docs, process_header = langchain_doc(data)
     # folder_name = "chroma_langchain_db"
     # folder_path = os.path.join(os.getcwd(), folder_name)
