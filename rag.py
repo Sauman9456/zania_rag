@@ -160,6 +160,7 @@ INSTRUCTIONS:
 3. Give answer in step by step format if required.
 4. Keep your answer concise with all required and requested details and solely on the information given in the document.
 5. Do not create or derive your own answer. If the answer is not directly available in the documents, just reply stating, 'Data Not Available'.
+Note: Answers should be word to word match if the question is a word to word match e.g, extraction related question.
 """
 
     response = client.chat.completions.create(

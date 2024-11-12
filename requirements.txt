@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-chroma
+langchain-openai
+langchain-core
+rank_bm25
+langchain-cohere
+fastapi
+python-multipart
+pymupdf4llm
+uvicorn
